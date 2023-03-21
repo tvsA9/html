@@ -1,88 +1,114 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Václav Ženíšek</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Václav Ženíšek</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #5c5c5c;
+            background: url("obrazky/index/bg.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+
+
+        }
+
+        table {
+            width: 600px;
+            height: 300px;
+            background-color: #242625;
+            border-radius: 40px;
+            border-style: dashed;
+            overflow: hidden;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            vertical-align: middle;
+        }
+	
+	  td {
+            padding: 45px 100px;
+            text-align: center;
+            border-color: white;
+            border: 1px solid black;
+            background: white;
+        }
+
+            td a {
+
+                padding: 10px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+        .fotka {
+            width: 300px;
+            height: 300px;
+            border-radius: 20%;
+            object-fit: cover;
+            border: 5px solid #555;
+        }
+
+        .tlacitko {
+            display: block;
+            text-align: center;
+            padding: 12px 14px;
+            background-color: #7e7e80;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 25px;
+            transition: background-color 0.3s;
+        }
+            
+		.tlacitko:hover {
+                background-color: #333;
+            }
+
+</style>
+
+
 </head>
 <body>
+
     <table>
         <tr>
-            <td><a href="ome.html">O mnì</a></td>
-            <td><a href="rodina.html">Rodina</a></td>
-            <td><a href="zajmy.html">Zájmy</a></td>
-            <td><a href="cestovani.html">Cestování</a></td>
+            <td rowspan="5">
+			<hr height="100">
+                <img class="fotka" src= "obrazky/index/okok.png">
+			<hr height="100">
+                <h1>Václav Ženíšek</h1>
+            </td>
+            <td>
+                <div>
+                    <a href="ome.html" class="tlacitko">O mně</a>
+                </div>
+            </td>
+        <tr>
+            <td>
+                <div>
+                    <a href="rodina.html" class="tlacitko">Rodina</a>
+                </div>
+            </td>
         </tr>
         <tr>
-            <td colspan="4">
-                <img class="fotka" src="obrazky/ok.png">
-                <h1>Václav Ženíšek</h1>
+            <td>
+                <div>
+                    <a href="zajmy.html" class="tlacitko">Zájmy</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <a href="cestovani.html" class="tlacitko">Cestování</a>
+                </div>
             </td>
         </tr>
     </table>
 </body>
-
-
-
-
-
-
- 
-<style>
-    body {
-        font-family: Arial;
-        margin: 0;
-        padding: 0;
-        background-color: #5c5c5c;
-        background: url("obrazky/bg.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    table {
-        width: 900px;
-        height: 200px;
-        border-collapse: collapse;
-        background-color: #fff;
-        border-radius: 50px;
-        border-style: dashed;
-        overflow: hidden;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        margin: 20px auto;
-        max-width: 600px;
-        text-align: center;
-        background-color: gray;
-    }
-
-    td {
-        padding: 10px;
-        text-align: center;
-        border-right: 1px solid black;
-        border-bottom: 1px solid black;
-        border-left: 1px solid black;
-        border-top: 1px solid black;
-    }
-
-        td a {
-            display: block;
-            padding: 10px;
-            color: #333;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 20px;
-            transition: background-color 0.2s;
-        }
-
-            td a:hover {
-                color: #fff;
-                background-color: #333;
-            }
-
-    .fotka {
-        width: 220px;
-        height: 220px;
-        border-radius: 20%;
-        object-fit: cover;
-    }
-</style>
-
 </html>
